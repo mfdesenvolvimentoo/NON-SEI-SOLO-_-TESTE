@@ -1,0 +1,152 @@
+:root {
+  --verde-neon: #78ff95;
+  --azul-mar: #00737c;
+  --azul-claro: #709ea6;
+  --verde-claro: #b4ffc4;
+  --azul-dark: #1a5d69;
+  --verde-folha: #3cb600;
+  --branco: #ffffff;
+  --texto-principal: #1f1f1f;
+  --texto-secundario: #4f5f63;
+  --cinza-claro: #f7f7f7;
+}
+
+.hero-section {
+  max-width: 1140px;
+  min-height: 380px;
+  margin: 40px auto;
+  padding: 50px 20px;
+
+  background-color: var(--azul-mar);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 780px;
+  color: var(--branco);
+}
+
+.hero-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--verde-neon);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-content h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  max-width: 680px;
+  margin: 0 auto 34px;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color:var();
+  flex-wrap: wrap;
+}
+
+.intro-section {
+  width: 100%;
+  padding: 70px 20px;
+  background-color: var(--branco);
+}
+
+.intro-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.intro-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.intro-card {
+  padding: 34px 28px;
+  background-color: var(--verde-claro);
+  border-top: 5px solid var(--verde-neon);
+  text-align: center;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.intro-card h3 {
+  margin-bottom: 16px;
+  color: var(--azul-mar);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.intro-card p {
+  color: var(--azul-dark);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+
+  .hero-section {
+    min-height: 330px;
+    margin: 30px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 42px;
+    letter-spacing: 4px;
+  }
+
+  .intro-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero-section {
+    min-height: 300px;
+    padding: 40px 18px;
+  }
+
+  .hero-content h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+}

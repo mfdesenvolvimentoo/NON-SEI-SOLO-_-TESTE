@@ -1,0 +1,263 @@
+:root {
+  --verde-neon: #78ff95;
+  --azul-mar: #00737c;
+  --azul-claro: #709ea6;
+  --verde-claro: #b4ffc4;
+  --azul-dark: #1a5d69;
+  --verde-folha: #3cb600;
+  --branco: #ffffff;
+  --texto-principal: #1f1f1f;
+  --texto-secundario: #4f5f63;
+  --cinza-claro: #f7f7f7;
+}
+
+.page-hero {
+  max-width: 1140px;
+  min-height: 300px;
+  margin: 40px auto;
+  padding: 50px 20px;
+  background-color: var(--azul-mar);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-hero-content {
+  max-width: 760px;
+  color: var(--branco);
+}
+
+.page-hero-content span {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--verde-neon);
+}
+
+.page-hero-content h2 {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.page-hero-content p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.contact-section {
+  width: 100%;
+  padding: 75px 20px;
+  background-color: var(--branco);
+}
+
+.contact-container {
+  max-width: 1140px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: start;
+}
+
+.contact-info h2 {
+  color: var(--azul-mar);
+  font-size: 36px;
+  line-height: 1.25;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.contact-info > p {
+  color: var(--texto-secundario);
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.contact-item {
+  padding: 22px 24px;
+  background-color: var(--verde-claro);
+  border-left: 5px solid var(--verde-neon);
+}
+
+.contact-item h3 {
+  color: var(--azul-mar);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.contact-item p {
+  color: var(--azul-dark);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-form-box {
+  padding: 36px 32px;
+  background-color: var(--verde-claro);
+  border-top: 5px solid var(--verde-neon);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: var(--azul-mar);
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--azul-claro);
+  background-color: var(--branco);
+  color: var(--texto-principal);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--azul-mar);
+}
+
+.contact-form button {
+  width: fit-content;
+  border: none;
+}
+
+.contact-cta {
+  max-width: 1140px;
+  margin: 0 auto 70px;
+  padding: 65px 20px;
+  background-color: var(--azul-mar);
+  text-align: center;
+}
+
+.contact-cta-content {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--branco);
+}
+
+.contact-cta-content span {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--verde-neon);
+}
+
+.contact-cta-content h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.contact-cta-content p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+
+  .page-hero {
+    margin: 30px 20px;
+    min-height: 260px;
+  }
+
+  .page-hero-content h2 {
+    font-size: 34px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-item {
+    text-align: left;
+  }
+
+  .contact-form button {
+    margin: 0 auto;
+  }
+
+  .contact-cta {
+    margin: 0 20px 60px;
+  }
+
+  .contact-cta-content h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .page-hero {
+    min-height: 240px;
+    padding: 40px 18px;
+  }
+
+  .page-hero-content h2 {
+    font-size: 28px;
+  }
+
+  .page-hero-content p {
+    font-size: 16px;
+  }
+
+  .contact-info h2 {
+    font-size: 28px;
+  }
+
+  .contact-form-box {
+    padding: 30px 22px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .contact-cta-content h2 {
+    font-size: 26px;
+  }
+
+  .contact-cta-content p {
+    font-size: 16px;
+  }
+}

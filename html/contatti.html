@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contatti | Non Sei Solo</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500;600;700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+
+  <link rel="stylesheet" href="../css/contatti.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <div class="language-selector">
+
+      <button class="language-btn active" data-lang="it">IT</button>
+
+      <button class="language-btn" data-lang="pt">PT</button>
+
+      <button class="language-btn" data-lang="en">EN</button>
+
+      <button class="language-btn" data-lang="de">DE</button>
+
+    </div>
+
+    <div class="logo-area">
+
+      <a href="../index.html" class="logo-box">
+
+        <h1>Non Sei Solo</h1>
+
+        <p data-i18n="siteSubtitle">
+          Progetto sociale di ascolto, cura e sostegno
+        </p>
+      </a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="../index.html" data-i18n="navHome">Inizio</a>
+        </li>
+
+        <li>
+          <a href="chi-siamo.html" data-i18n="navAbout">Chi Siamo</a>
+        </li>
+
+        <li>
+          <a href="progetti.html" data-i18n="navProjects">Progetti</a>
+        </li>
+
+        <li>
+          <a href="come-aiutare.html" data-i18n="navHelp">Come Aiutare</a>
+        </li>
+
+        <li>
+          <a href="volontariato.html" data-i18n="navVolunteer">Volontariato</a>
+        </li>
+
+        <li>
+          <a href="testimonianze.html" data-i18n="navTestimonials">Testimonianze</a>
+        </li>
+
+        <li>
+          <a href="contatti.html" class="active" data-i18n="navContact">Contatti</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+
+      <div class="page-hero-content">
+
+        <span data-i18n="contactHeroLabel">Contatti</span>
+
+        <h2 data-i18n="contactHeroTitle">
+          Parla con noi. Non devi camminare da solo.
+        </h2>
+
+        <p data-i18n="contactHeroText">
+          Entra in contatto per chiedere supporto, offrire aiuto,
+          partecipare come volontario o conoscere meglio il progetto.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+
+      <div class="contact-container">
+
+        <div class="contact-info">
+
+          <span class="section-label" data-i18n="contactInfoLabel">
+            Parla con noi
+          </span>
+
+          <h2 data-i18n="contactInfoTitle">
+            Siamo pronti ad ascoltarti.
+          </h2>
+
+          <p data-i18n="contactInfoText">
+            Non Sei Solo è uno spazio di accoglienza, supporto e ascolto.
+            Usa i canali qui sotto per parlare con noi.
+          </p>
+
+          <div class="contact-list">
+
+            <div class="contact-item">
+              <h3 data-i18n="contactWhatsappTitle">WhatsApp</h3>
+              <p>+39 000 000 0000</p>
+            </div>
+
+            <div class="contact-item">
+              <h3 data-i18n="contactEmailTitle">E-mail</h3>
+              <p>contatto@nonseisolo.it</p>
+            </div>
+
+            <div class="contact-item">
+              <h3 data-i18n="contactLocationTitle">Località</h3>
+              <p data-i18n="contactLocationText">Italia</p>
+            </div>
+
+            <div class="contact-item">
+              <h3 data-i18n="contactSocialTitle">Social media</h3>
+              <p>@nonseisolo</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+
+          <form class="contact-form">
+
+            <div class="form-group">
+
+              <label for="nome" data-i18n="contactFormNameLabel">Nome</label>
+
+              <input 
+                type="text" 
+                id="nome" 
+                name="nome" 
+                placeholder="Il tuo nome"
+                data-i18n-placeholder="contactFormNamePlaceholder"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email" data-i18n="contactFormEmailLabel">E-mail</label>
+
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="iltuoemail@email.com"
+                data-i18n-placeholder="contactFormEmailPlaceholder"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="assunto" data-i18n="contactFormSubjectLabel">Oggetto</label>
+
+              <select id="assunto" name="assunto">
+
+                <option value="" data-i18n="contactFormSubjectDefault">
+                  Seleziona un’opzione
+                </option>
+
+                <option value="apoio" data-i18n="contactFormSubjectSupport">
+                  Ho bisogno di supporto
+                </option>
+
+                <option value="doacao" data-i18n="contactFormSubjectDonation">
+                  Voglio fare una donazione
+                </option>
+
+                <option value="voluntario" data-i18n="contactFormSubjectVolunteer">
+                  Voglio essere volontario
+                </option>
+
+                <option value="informacoes" data-i18n="contactFormSubjectInfo">
+                  Voglio maggiori informazioni
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem" data-i18n="contactFormMessageLabel">Messaggio</label>
+
+              <textarea 
+                id="mensagem" 
+                name="mensagem" 
+                rows="6" 
+                placeholder="Scrivi il tuo messaggio"
+                data-i18n-placeholder="contactFormMessagePlaceholder"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" data-i18n="contactFormButton">
+              Invia messaggio
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact-cta">
+
+      <div class="contact-cta-content">
+
+        <span data-i18n="contactCtaLabel">Non sei solo</span>
+
+        <h2 data-i18n="contactCtaTitle">
+          Una conversazione può essere il primo passo per ricominciare.
+        </h2>
+
+        <p data-i18n="contactCtaText">
+          Entra in contatto con responsabilità, rispetto e libertà.
+          Il tuo messaggio sarà ricevuto con attenzione.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <p data-i18n="footerRights">
+      © 2026 Non Sei Solo. Tutti i diritti riservati.
+    </p>
+  </footer>
+
+  <script src="../js/global.js"></script>
+
+  <script src="../js/contatti.js"></script>
+</body>
+</html>
